@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Chat App</title>
+  <style>
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .room-selector {
+      margin-bottom: 10px;
+    }
+    .message-list {
+      height: 500px;
+      overflow-y: scroll;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Chat App</h1>
+  <div class="row room-selector">
+    <div class="col-md-6">
+      <select class="form-control" id="room-select">
+        <option value="covid19">Covid19</option>
+        <option value="music">Music</option>
+        <option value="movies">Movies</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <button class="btn btn-primary" id="join-room">Join Room</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 message-list" id="message-list">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-10">
+      <input type="text" class="form-control" id="message-input">
+    </div>
+    <div class="col-md-2">
+      <button class="btn btn-primary" id="send-message">Send</button>
+    </div>
+  </div>
+</div>
+
